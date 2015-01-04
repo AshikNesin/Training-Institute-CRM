@@ -1,0 +1,7 @@
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\bin\Debug\ATOM Training Labs.exe.config
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM Training Labs.csprojResolveAssemblyReference.cache
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM_Training_Labs.frmAdmission.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM_Training_Labs.Properties.Resources.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmDashboard.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmLogin.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM Training Labs.csproj.GenerateResource.Cache

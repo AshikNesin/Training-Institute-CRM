@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="admissions" EntityType="DBModel.admission" />
+    <EntitySet Name="enquiries" EntityType="DBModel.enquiry" />
+    <EntitySet Name="internships" EntityType="DBModel.internship" />
+    <EntitySet Name="ipts" EntityType="DBModel.ipt" />
+    <EntitySet Name="meetups" EntityType="DBModel.meetup" />
+    <EntitySet Name="userdetails" EntityType="DBModel.userdetail" />
+  </EntityContainer>
+  <EntityType Name="admission">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="Int32" Nullable="false" />
+    <Property Name="DateOfJoining" Type="DateTime" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" />
+    <Property Name="Notes" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="WhatProfession" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CollegeName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMajor" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeDesignation" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CourseTaken" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CourseFee" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CourseEnd" Type="DateTime" />
+    <Property Name="CertificateStatus" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="BreakOfStudy" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="enquiry">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="Int32" Nullable="false" />
+    <Property Name="DateOfEnquiry" Type="DateTime" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Mode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Notes" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Interested" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TimePreferred" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Referrals" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Profession" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CollegeName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMajor" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="EmpDesignation" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="WhoTheyMet" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Discussion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EnrollmentStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FollowUp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="internship">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="CollegeName" Type="String" MaxLength="125" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMajor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="YearOfPassing" Type="Int32" />
+    <Property Name="JoinedDate" Type="DateTime" />
+    <Property Name="ConcludeDate" Type="DateTime" />
+    <Property Name="InternshipType" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="TimePreferred" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Notes" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ipt">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CollegeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMajor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="YearOfPassing" Type="Int32" />
+    <Property Name="JoinedDate" Type="DateTime" />
+    <Property Name="ConcludeDate" Type="DateTime" />
+    <Property Name="InternshipType" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="TimePreferred" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Notes" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="meetup">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Email_ID" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CollegeName" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMajor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="YearOfPassing" Type="Int32" />
+    <Property Name="Interested" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Event1Date" Type="DateTime" />
+    <Property Name="Event1Topic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Event1Notes" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Event2Date" Type="DateTime" />
+    <Property Name="Event2Topic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Event2Notes" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Event3Date" Type="DateTime" />
+    <Property Name="Event3Topic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Event3Notes" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="userdetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="role" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,17 @@
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\bin\Debug\ATOM Training Labs.exe.config
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\bin\Debug\ATOM Training Labs.exe
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\bin\Debug\ATOM Training Labs.pdb
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\bin\Debug\EntityFramework.dll
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\bin\Debug\EntityFramework.xml
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.csprojResolveAssemblyReference.cache
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmAdmission.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmEnquiry.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmInternship.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmIPT.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmMeetup.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.Properties.Resources.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmDashboard.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.frmLogin.resources
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM.csproj.GenerateResource.Cache
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM Training Labs.exe
+E:\Projects\Workspace\Microsoft Visual Studio 2013\ATOM Training Labs\ATOM Training Labs\obj\Debug\ATOM Training Labs.pdb

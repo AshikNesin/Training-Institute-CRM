@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DBModelStoreContainer">
+    <EntitySet Name="admissions" EntityType="DBModel.Store.admissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="enquiries" EntityType="DBModel.Store.enquiries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="internships" EntityType="DBModel.Store.internships" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ipts" EntityType="DBModel.Store.ipts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="meetups" EntityType="DBModel.Store.meetups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="userdetails" EntityType="DBModel.Store.userdetails" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="admissions">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="DateOfJoining" Type="datetime" Nullable="true" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="MobileNo" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="Email_ID" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="Gender" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="DOB" Type="datetime" Nullable="true" />
+    <Property Name="Notes" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="WhatProfession" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="CollegeName" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="StudentMajor" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="CompanyName" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="EmployeeDesignation" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="CourseTaken" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="CourseFee" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="CourseEnd" Type="datetime" Nullable="true" />
+    <Property Name="CertificateStatus" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="BreakOfStudy" Type="varchar" Nullable="true" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="enquiries">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="DateOfEnquiry" Type="datetime" Nullable="true" />
+    <Property Name="Name" Type="varchar" Nullable="true" MaxLength="150" />
+    <Property Name="MobileNo" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="Email_ID" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="Gender" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="Mode" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="Notes" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="Interested" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="TimePreferred" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="Referrals" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="Profession" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="CollegeName" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="StudentMajor" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="CompanyName" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="EmpDesignation" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="WhoTheyMet" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="Discussion" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="EnrollmentStatus" Type="varchar" Nullable="true" MaxLength="10" />
+    <Property Name="FollowUp" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="internships">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Position" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="Gender" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="MobileNo" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="Email_ID" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="120" />
+    <Property Name="CollegeName" Type="varchar" Nullable="true" MaxLength="125" />
+    <Property Name="StudentMajor" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="YearOfPassing" Type="int" Nullable="true" />
+    <Property Name="JoinedDate" Type="datetime" Nullable="true" />
+    <Property Name="ConcludeDate" Type="datetime" Nullable="true" />
+    <Property Name="InternshipType" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="TimePreferred" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="Amount" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Notes" Type="varchar" Nullable="true" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ipts">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Gender" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="MobileNo" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="Email_ID" Type="varchar" Nullable="true" MaxLength="120" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="CollegeName" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="StudentMajor" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="YearOfPassing" Type="int" Nullable="true" />
+    <Property Name="JoinedDate" Type="datetime" Nullable="true" />
+    <Property Name="ConcludeDate" Type="datetime" Nullable="true" />
+    <Property Name="InternshipType" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="TimePreferred" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="Notes" Type="varchar" Nullable="true" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="meetups">
+    <Key>
+      <PropertyRef Name="SerialNo" />
+    </Key>
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Gender" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="MobileNo" Type="varchar" Nullable="true" MaxLength="25" />
+    <Property Name="Email_ID" Type="varchar" Nullable="true" MaxLength="120" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="CollegeName" Type="varchar" Nullable="true" MaxLength="120" />
+    <Property Name="StudentMajor" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="YearOfPassing" Type="int" Nullable="true" />
+    <Property Name="Interested" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="Event1Date" Type="datetime" Nullable="true" />
+    <Property Name="Event1Topic" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Event1Notes" Type="varchar" Nullable="true" MaxLength="150" />
+    <Property Name="Event2Date" Type="datetime" Nullable="true" />
+    <Property Name="Event2Topic" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Event2Notes" Type="varchar" Nullable="true" MaxLength="150" />
+    <Property Name="Event3Date" Type="datetime" Nullable="true" />
+    <Property Name="Event3Topic" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Event3Notes" Type="varchar" Nullable="true" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="userdetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="password" Type="varchar" Nullable="true" MaxLength="45" />
+    <Property Name="role" Type="varchar" Nullable="true" MaxLength="10" />
+  </EntityType>
+</Schema>

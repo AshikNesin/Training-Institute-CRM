@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="admissions">
+      <EntityTypeMapping TypeName="IsTypeOf(DBModel.admission)">
+        <MappingFragment StoreEntitySet="admissions">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="DateOfJoining" ColumnName="DateOfJoining" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="WhatProfession" ColumnName="WhatProfession" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="StudentMajor" ColumnName="StudentMajor" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="EmployeeDesignation" ColumnName="EmployeeDesignation" />
+          <ScalarProperty Name="CourseTaken" ColumnName="CourseTaken" />
+          <ScalarProperty Name="CourseFee" ColumnName="CourseFee" />
+          <ScalarProperty Name="CourseEnd" ColumnName="CourseEnd" />
+          <ScalarProperty Name="CertificateStatus" ColumnName="CertificateStatus" />
+          <ScalarProperty Name="BreakOfStudy" ColumnName="BreakOfStudy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="enquiries">
+      <EntityTypeMapping TypeName="IsTypeOf(DBModel.enquiry)">
+        <MappingFragment StoreEntitySet="enquiries">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="DateOfEnquiry" ColumnName="DateOfEnquiry" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Interested" ColumnName="Interested" />
+          <ScalarProperty Name="TimePreferred" ColumnName="TimePreferred" />
+          <ScalarProperty Name="Referrals" ColumnName="Referrals" />
+          <ScalarProperty Name="Profession" ColumnName="Profession" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="StudentMajor" ColumnName="StudentMajor" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="EmpDesignation" ColumnName="EmpDesignation" />
+          <ScalarProperty Name="WhoTheyMet" ColumnName="WhoTheyMet" />
+          <ScalarProperty Name="Discussion" ColumnName="Discussion" />
+          <ScalarProperty Name="EnrollmentStatus" ColumnName="EnrollmentStatus" />
+          <ScalarProperty Name="FollowUp" ColumnName="FollowUp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="internships">
+      <EntityTypeMapping TypeName="IsTypeOf(DBModel.internship)">
+        <MappingFragment StoreEntitySet="internships">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="StudentMajor" ColumnName="StudentMajor" />
+          <ScalarProperty Name="YearOfPassing" ColumnName="YearOfPassing" />
+          <ScalarProperty Name="JoinedDate" ColumnName="JoinedDate" />
+          <ScalarProperty Name="ConcludeDate" ColumnName="ConcludeDate" />
+          <ScalarProperty Name="InternshipType" ColumnName="InternshipType" />
+          <ScalarProperty Name="TimePreferred" ColumnName="TimePreferred" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipts">
+      <EntityTypeMapping TypeName="IsTypeOf(DBModel.ipt)">
+        <MappingFragment StoreEntitySet="ipts">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="StudentMajor" ColumnName="StudentMajor" />
+          <ScalarProperty Name="YearOfPassing" ColumnName="YearOfPassing" />
+          <ScalarProperty Name="JoinedDate" ColumnName="JoinedDate" />
+          <ScalarProperty Name="ConcludeDate" ColumnName="ConcludeDate" />
+          <ScalarProperty Name="InternshipType" ColumnName="InternshipType" />
+          <ScalarProperty Name="TimePreferred" ColumnName="TimePreferred" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="meetups">
+      <EntityTypeMapping TypeName="IsTypeOf(DBModel.meetup)">
+        <MappingFragment StoreEntitySet="meetups">
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Email_ID" ColumnName="Email_ID" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CollegeName" ColumnName="CollegeName" />
+          <ScalarProperty Name="StudentMajor" ColumnName="StudentMajor" />
+          <ScalarProperty Name="YearOfPassing" ColumnName="YearOfPassing" />
+          <ScalarProperty Name="Interested" ColumnName="Interested" />
+          <ScalarProperty Name="Event1Date" ColumnName="Event1Date" />
+          <ScalarProperty Name="Event1Topic" ColumnName="Event1Topic" />
+          <ScalarProperty Name="Event1Notes" ColumnName="Event1Notes" />
+          <ScalarProperty Name="Event2Date" ColumnName="Event2Date" />
+          <ScalarProperty Name="Event2Topic" ColumnName="Event2Topic" />
+          <ScalarProperty Name="Event2Notes" ColumnName="Event2Notes" />
+          <ScalarProperty Name="Event3Date" ColumnName="Event3Date" />
+          <ScalarProperty Name="Event3Topic" ColumnName="Event3Topic" />
+          <ScalarProperty Name="Event3Notes" ColumnName="Event3Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userdetails">
+      <EntityTypeMapping TypeName="IsTypeOf(DBModel.userdetail)">
+        <MappingFragment StoreEntitySet="userdetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
